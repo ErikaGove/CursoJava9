@@ -1,4 +1,7 @@
 import "/src/css/styles.scss" /* Al importAR EL ARCHIVO SASSS, importas todo lo que importa el archivo sass*/
+// Import all of Bootstrap's JS
+import * as bootstrap from 'bootstrap';
+
 
 import { insertMainHeader } from "/src/modules/header/header";
 import { insertMainFooter } from "/src/modules/footer/footer";
