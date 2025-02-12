@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JavaScript Course</title>
+</head>
+
+<body class="bg-dark text-light">
+  <div id="app"></div>
+  <!-- Main  JS -->
+  <script type="module" src="./src/js/main.js"></script>
+</body>
+
+</html>
+
+<!-- npm no packagge manage -->
+<!-- lo usamos para manejar/gestionar las dependencias     ====> administrador de dependencias
+Vite- herramienta que ayuda a hacer el empaquetamiento de la aplicacion --- /da un servidor local mas eficiente qye live server
+        Un bundler es una herramienta que toma múltiples 
+        archivos de código (JavaScript, CSS, imágenes, etc.) y los combina en archivos optimizados para el navegador.
+
+                              PASOS
+++  npm init      genera un archivo formato json packagge.json  <===== Instalar dependencias
+ +  npm i --save-dev vite
+ +  npm install bootstrap @popperjs/core          descargara la version estable mas reciente si no especificamos cual
+ +  npm i --save-dev sass
+ +  npm i bootstrap-icons
+ +  colocar el script A
+ +  en git bash poner npm run dev ===>DARA UN SERVIDOR LOCAL/ MODO DESARROLLO
+                          EN EL NAVEGADOR VEREMOS NUESTRA APLICACION, los puertos se pueden configurar 
+                          $ npm run dev -- --open  ABRE EL SERVIDOR DE UNA VEZ
+
+
+
+ Iniciar proyecto con vite, hay que poner este comando en la command window
+
+Siempre hay que verificar estar instalando en la raiz, si nos equivocamos hay que borrar la carpeta creada
+
+SaSS -  pre-procesador de css, para que los archivos sass se conviertan en css
+
+La carpeta node_modules tiene todas las dependencias que se han instalado, pero lleva todas las 
+librerias que quiza ni utilizamos todo su contenido
+
+
+
+ ..... Al gtrabajar en un proyecto ya iniciado, clonamos el proyecto pero no tenemos aun las 
+        dependencias para instalar las dependencias que ya tenemos del repo clonado ejecutamos 
+        npm i o npm install  en gitbash
+
+-->
+
+<!-- dependencias solo en modo produccion
+    -dev dependencies dependencias cuando estas desarrollando, no se necesitan en el modo produccion
+        Esto hace la aplicacion más ligera y rápida 
+
+-->
+
+
+<!-- 
+    "dev": "vite",            // start dev server, aliases: `vite dev`, `vite serve`      SERVIDOR LOCAL
+    "build": "vite build",    // build for production                                     
+    "preview": "vite preview" // locally preview production build
+
+-->
+
+
+<!-- archivo gitignore
+ git no da seguimiento a los archivos o carpetas por lo que no se le da seguimiento -->
+
+
+ <!-- Los archivos en node_modules se pueden minificar, los identificas porque tienen la palabra 
+  min
+  los archivos de la carpeta public no se minifican
+ -->
+
+
+
+ <!-- npm run build =====> genera el empaquetado de los archivos,
+      archivos son minificados  
+ se crea carpeta dist =====> distribucion de nuestra aplicacion 
+        la carpeta public ahora esta en la raiz
+ -->
+
+ <!-- Verificar que no hay ningun error 
+  npm run preview -->
+
+
+  <!-- vite.config.js
+  Hacer archivo en la raiz, para configurar las paginas y sus enlaces, necesario o se inimizaran 
+  las paginas y no tendremos acceso a ellas 
+  -->
